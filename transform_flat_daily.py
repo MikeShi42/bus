@@ -44,8 +44,8 @@ def transform(file, date, output_file_path, write_header=False):
             d["UpdatedISO"] = last_updated_iso_sting
             f.writerow(d)
 
-output_path = '/Users/michaelshi/busdata/1010-1014_out.csv'
-file_path = '/Users/michaelshi/busdata/Fri1014/'
+output_path = '~/busdata/1010-1014_out.csv'
+file_path = '~/busdata/Fri1014/'
 transform(file_path + 'boop_1.txt', date(2016,10,10), output_path, write_header=True)
 transform(file_path + 'boop_2.txt', date(2016,10,11), output_path)
 transform(file_path + 'boop_3.txt', date(2016,10,12), output_path)

@@ -1,4 +1,4 @@
-with open('/Users/michaelshi/busdata/Fri1014/Route2092.txt', 'r') as route_file:
+with open('~/busdata/Route2092.txt', 'r') as route_file:
     day_number = 0
     day_data = ''
     empty_brace_count = 0
@@ -13,7 +13,7 @@ with open('/Users/michaelshi/busdata/Fri1014/Route2092.txt', 'r') as route_file:
             day_data += line
         if empty_brace_count > 1290:
             day_number+=1
-            file_name = ('/Users/michaelshi/busdata/Fri1014/boop_' +
+            file_name = ('~/busdata/Fri1014/boop_' +
                 str(day_number) + '.txt')
             print file_name
             with open(file_name, 'w') as data_file:
@@ -23,7 +23,7 @@ with open('/Users/michaelshi/busdata/Fri1014/Route2092.txt', 'r') as route_file:
             consume_mode = True # Start consuming the rest of the square brackets
 
     day_number += 1
-    file_name = ('/Users/michaelshi/busdata/Fri1014/boop_' +
+    file_name = ('~/busdata/Fri1014/boop_' +
                  str(day_number) + '.txt')
     print file_name
     with open(file_name, 'w') as data_file:
